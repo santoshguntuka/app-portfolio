@@ -2,8 +2,8 @@
   "name": "my-portfolio",
   "version": "1.0.0",
   "scripts": {
-    "start": "node backend/server.js",
-    "heroku-postbuild": "npm install --prefix frontend && npm run build --prefix frontend"
+    "start": "node backend/server.js"
+  
   },
   "engines": {
     "node": "20.16.0",
