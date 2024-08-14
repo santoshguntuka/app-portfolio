@@ -6,7 +6,8 @@
     "heroku-postbuild": "npm install --prefix frontend && npm run build --prefix frontend"
   },
   "engines": {
-    "node": "20.16.0"
+    "node": "20.16.0",
+    "npm": "10.8.1"
   },
   "dependencies": {
     "express": "^4.17.1",
