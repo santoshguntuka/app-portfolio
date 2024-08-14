@@ -1,0 +1,60 @@
+.projects {
+  padding: 4rem;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.projects h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Changed to space-between for full-width layout */
+}
+
+.project-item {
+  background-color: #fff;
+  padding: 1.5rem;
+  margin: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 45%; /* Increased width for better use of space */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-item h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-item p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.project-item ul {
+  padding-left: 1.5rem; /* Add some padding to align bullet points */
+  margin-bottom: 1rem;
+}
+
+.project-item ul li {
+  margin-bottom: 0.5rem; /* Space out bullet points */
+}
+
+.project-item a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.project-item a:hover {
+  text-decoration: underline;
+}

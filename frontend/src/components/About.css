@@ -1,0 +1,54 @@
+.about {
+  padding: 4rem 2rem;
+  background-color: #f4f4f4;
+  color: #333;
+  text-align: center; /* Center-align all text in this section */
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-pic {
+  margin-bottom: 2rem; /* Add space between the image and the text */
+}
+
+.profile-pic img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; /* Circular image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow */
+}
+
+.about h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.about p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.btn-resume {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 2rem;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-resume:hover {
+  background-color: #555;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
