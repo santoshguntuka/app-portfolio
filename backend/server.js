@@ -18,18 +18,24 @@ mongoose.connect(process.env.MONGO_URI, {
   .then(() => console.log('MongoDB connected...'))
   .catch(err => console.error('MongoDB connection error:', err));
 
-app.post('/contact', async (req, res) => {
-  const { name, email, message } = req.body;
-
-  try {
-    const newContact = new Contact({ name, email, message });
-    await newContact.save();
-    res.status(200).send('Message received successfully!');
-  } catch (err) {
-    console.error('Error saving contact form submission:', err.message);
-    res.status(500).send('Failed to send message. Please try again.');
-  }
-});
+  app.post('/contact', async (req, res) => {
+    const { name, email, message } = req.body;
+  
+    if (!name || !email || !message) {
+      return res.status(400).send('All fields are required.');
+    }
+  
+    try {
+      const newContact = new Contact({ name, email, message });
+      await newContact.save();
+      res.status(200).send('Message received successfully!');
+    } catch (err) {
+      console.error('Error saving contact form submission:', err); // Log the full error object
+      res.status(500).send('Failed to send message. Please try again.');
+    }
+  });
+  
+  
 
 // Serve static assets in production
 if (process.env.NODE_ENV === 'production') {
